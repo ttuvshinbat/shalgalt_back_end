@@ -12,7 +12,8 @@ app.post("/", function requestHandle(req, res) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
     "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
+    "Origin, X-Requested-With, Content-Type, Accept",
+    "Access-Control-Allow-Methods: POST, GET, OPTIONS"
   );
   res.header("Content-Type", "application/json");
 });
